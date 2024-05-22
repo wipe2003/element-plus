@@ -8,7 +8,7 @@
     label-width="auto"
     class="demo-ruleForm"
   >
-    <el-form-item label="Password" prop="pass">
+    <el-form-item label="用户名" prop="username">
       <el-input v-model="ruleForm.pass" type="password" autocomplete="off" />
     </el-form-item>
     <el-form-item label="Confirm" prop="checkPass">
@@ -75,7 +75,7 @@ const validatePass2 = (rule: any, value: any, callback: any) => {
 }
 
 const ruleForm = reactive({
-  pass: '',
+  username: '',
   checkPass: '',
   age: '',
 })
